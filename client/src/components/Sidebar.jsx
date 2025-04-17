@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarCheck, ChartArea, LayoutDashboard, LogOut } from "lucide-react";
+import { CalendarCheck, ChartArea, Key, LayoutDashboard, LogOut } from "lucide-react";
 import { Logout } from "../redux/actions/AuthActions";
 import { useDispatch } from "react-redux";
 import { NavLink, useLocation } from "react-router-dom";
@@ -39,7 +39,7 @@ const Sidebar = () => {
           <NavLink to="/Api_Key"
             className={pathname == "/Api_Key" ? "flex size-full text-white gap-4 py-3 px-8 font-medium rounded-full shadow-inner bg-gray-700 from-purple-400 transition-all ease-linear" : "flex size-full text-white gap-4 py-3 px-8 font-medium rounded-full bg-cover hover:bg-gray-700 hover:shadow-inner from-purple-400 transition-all ease-linear"}
           >
-            <ChartArea />
+            <Key  />
             Api_Key
           </NavLink>
         </li>
